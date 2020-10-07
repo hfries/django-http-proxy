@@ -3,7 +3,7 @@ import logging
 import re
 
 from django.http import HttpResponse
-from django.utils.six.moves import urllib
+from urllib import parse, request, error
 from django.views.generic import View
 
 from httpproxy.recorder import ProxyRecorder
